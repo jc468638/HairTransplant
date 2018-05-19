@@ -15,17 +15,21 @@
  */
 
 .site-header {
-  background-color: #f8f9fad4;
+  background-color: #1f4fa3;
   -webkit-backdrop-filter: saturate(180%) blur(20px);
   backdrop-filter: saturate(180%) blur(20px);
 }
 .site-header a {
-  color: #007bfe;
+  color: #f8f9fa;
   transition: ease-in-out color .15s;
+  padding: 15px;
+
 }
 .site-header a:hover {
-  color: rgba(230, 230, 230, 0.23);
+  color: #f8f9fa;
+  background-color: #2e4d83;
   text-decoration: none;
+
 }
 
 /*
