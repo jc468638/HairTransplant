@@ -1,3 +1,7 @@
+<%@ page import="java.util.List" %>
+<%@ page import="com.htransplant.beans.HairPackage" %>
+<%@ page import="java.util.ArrayList" %>
+<%@ page import="java.util.Iterator" %>
 <!doctype html>
 <html lang="en">
   <head>
@@ -99,22 +103,41 @@
                 </div>
               </div>
             </div>
+            <!-- Display packages using scriplets and expressions
+             ================================================== -->
+            <%
+              List<HairPackage> hairPackages = (ArrayList)request.getAttribute("packages");
+              Iterator<HairPackage> iterator = hairPackages.iterator();
 
-            <div class="col-md-4">
-              <div class="card mb-4 box-shadow">
-                <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Card image cap">
-                <div class="card-body">
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+              while(iterator.hasNext()){
+                  HairPackage hairPackage = iterator.next();
+                  %>
+              <!-- Code for get========= -->
+              <div class="col-md-4">
+                <form>
+                  <div class="card mb-4 box-shadow">
+                    <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Card image cap">
+                    <div class="card-body">
+                      <p class="card-text"><%=hairPackage.getPackageName()%></p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                          <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                        </div>
+                        <small class="text-muted">9 mins</small>
+                      </div>
                     </div>
-                    <small class="text-muted">9 mins</small>
                   </div>
-                </div>
+                  <input type="text" name="package" value="{0}">
+                </form>
               </div>
-            </div>
+
+            <% }
+
+            %>
+
+
+
             <div class="col-md-4">
               <div class="card mb-4 box-shadow">
                 <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Card image cap">
