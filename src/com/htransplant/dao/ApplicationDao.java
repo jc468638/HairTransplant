@@ -28,6 +28,9 @@ public class ApplicationDao {
                 hairPackage= new HairPackage(); //creating object HairPackage
                 hairPackage.setPackageId(set.getInt("packageId"));
                 hairPackage.setPackageName(set.getString("packageName"));
+                hairPackage.setPackageDescription(set.getString("packageDescription"));
+                hairPackage.setPackagePrice(set.getInt("packagePrice"));
+               // hairPackage.setPackageImgPath(set.getString("packageI"));
                 hairpackages.add(hairPackage);
             }
         }
