@@ -6,6 +6,9 @@
         <element id="directory" name="classes">
           <element id="module-output" name="HairTransplant1" />
         </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="mysql:mysql-connector-java:5.1.46" />
+        </element>
       </element>
       <element id="javaee-facet-resources" facet="HairTransplant1/web/Web" />
     </root>

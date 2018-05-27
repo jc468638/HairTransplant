@@ -9,7 +9,9 @@
 .container {
   max-width: 960px;
 }
-
+#btn-toolbar-login-signup {
+  float: right;
+}
 /*
  * Custom translucent site header
  */
