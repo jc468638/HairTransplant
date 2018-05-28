@@ -11,8 +11,8 @@
 
     <!-- Bootstrap core CSS -->
     <link href="../css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom styles for this template -->
-    <link href="form-validation.css" rel="stylesheet">
+    <!-- Custom styles -->
+    <link href="../css/product.css" rel="stylesheet">
   </head>
 
   <body class="bg-light">
@@ -37,27 +37,30 @@
       </div>
     </nav>
 
+    <section class="jumbotron text-center">
+        <div class="container">
+            <h1 class="jumbotron-heading">Sign up</h1>
+            <p class="lead text-muted">Create your account with us, you will have benefits such as tracking ..... lorep</p>
+        </div>
+    </section>
+
     <div class="container">
-      <div class="py-5 text-center">
-        <img class="d-block mx-auto mb-4" src="https://getbootstrap.com/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
-        <h2>Sign up</h2>
-        <p class="lead">Create your account with us, you will have benefits such as tracking ..... lorep </p>
-      </div>
+
 
       <div class="row">
 
-        <div class="col-md-12 order-md-1">
+        <div class="col-md-6 order-md-1">
           <h4 class="mb-3">Create my account</h4>
           <form class="needs-validation" novalidate>
             <div class="row">
-              <div class="col-md-4 mb-3">
+              <div class="col-md-6 mb-3">
                 <label for="firstName">First name</label>
                 <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
                 <div class="invalid-feedback">
                   Valid first name is required.
                 </div>
               </div>
-              <div class="col-md-4 mb-3">
+              <div class="col-md-6 mb-3">
                 <label for="lastName">Last name</label>
                 <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
                 <div class="invalid-feedback">
@@ -129,12 +132,6 @@
                 </div>
               </div>
             </div>
-  
-
- 
-
-  
-           
           </form>
         </div>
       </div>

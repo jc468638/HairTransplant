@@ -946,6 +946,7 @@
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="241" parent="231" name="doctorName">
@@ -1060,206 +1061,220 @@ doctorId</ColNames>
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="263" parent="234" name="packageDescription">
+    <column id="263" parent="234" name="packageName">
       <Position>2</Position>
       <DataType>varchar(45)|0s</DataType>
+      <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="264" parent="234" name="packagePrice">
+    <column id="264" parent="234" name="packageDescription">
       <Position>3</Position>
+      <DataType>varchar(500)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="265" parent="234" name="packagePrice">
+      <Position>4</Position>
       <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="265" parent="234" name="typeId">
-      <Position>4</Position>
+    <column id="266" parent="234" name="packageStatus">
+      <Position>5</Position>
+      <DataType>varchar(2)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="267" parent="234" name="typeId">
+      <Position>6</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="266" parent="234" name="fk_Package_SurgeryType1_idx">
+    <index id="268" parent="234" name="fk_Package_SurgeryType1_idx">
       <ColNames>typeId</ColNames>
     </index>
-    <key id="267" parent="234" name="PRIMARY">
+    <key id="269" parent="234" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
-      <ColNames>packageId
-typeId</ColNames>
+      <ColNames>packageId</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="268" parent="234" name="fk_Package_SurgeryType1">
+    <foreign-key id="270" parent="234" name="fk_Package_SurgeryType1">
       <ColNames>typeId</ColNames>
       <RefSchemaName>h_transplant</RefSchemaName>
       <RefTableName>surgerytype</RefTableName>
       <RefColNames>typeId</RefColNames>
     </foreign-key>
-    <column id="269" parent="235" name="packageId">
+    <column id="271" parent="235" name="packageId">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="270" parent="235" name="doctorId">
+    <column id="272" parent="235" name="doctorId">
       <Position>2</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="271" parent="235" name="fk_Package_has_Doctor_Package1_idx">
+    <index id="273" parent="235" name="fk_Package_has_Doctor_Package1_idx">
       <ColNames>packageId</ColNames>
     </index>
-    <index id="272" parent="235" name="fk_Package_has_Doctor_Doctor1_idx">
+    <index id="274" parent="235" name="fk_Package_has_Doctor_Doctor1_idx">
       <ColNames>doctorId</ColNames>
     </index>
-    <key id="273" parent="235" name="PRIMARY">
+    <key id="275" parent="235" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>packageId
 doctorId</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="274" parent="235" name="fk_Package_has_Doctor_Package1">
+    <foreign-key id="276" parent="235" name="fk_Package_has_Doctor_Package1">
       <ColNames>packageId</ColNames>
       <RefSchemaName>h_transplant</RefSchemaName>
       <RefTableName>package</RefTableName>
       <RefColNames>packageId</RefColNames>
     </foreign-key>
-    <foreign-key id="275" parent="235" name="fk_Package_has_Doctor_Doctor1">
+    <foreign-key id="277" parent="235" name="fk_Package_has_Doctor_Doctor1">
       <ColNames>doctorId</ColNames>
       <RefSchemaName>h_transplant</RefSchemaName>
       <RefTableName>doctor</RefTableName>
       <RefColNames>doctorId</RefColNames>
     </foreign-key>
-    <column id="276" parent="236" name="roleId">
+    <column id="278" parent="236" name="roleId">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="277" parent="236" name="roleName">
+    <column id="279" parent="236" name="roleName">
       <Position>2</Position>
       <DataType>varchar(45)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="278" parent="236" name="PRIMARY">
+    <key id="280" parent="236" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>roleId</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="279" parent="237" name="typeId">
+    <column id="281" parent="237" name="typeId">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="280" parent="237" name="typeDescription">
+    <column id="282" parent="237" name="typeDescription">
       <Position>2</Position>
       <DataType>varchar(45)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="281" parent="237" name="typePriceDefault">
+    <column id="283" parent="237" name="typePriceDefault">
       <Position>3</Position>
       <DataType>varchar(45)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="282" parent="237" name="typePhoto">
+    <column id="284" parent="237" name="typePhotoPath">
       <Position>4</Position>
-      <DataType>blob|0s</DataType>
+      <DataType>varchar(80)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="283" parent="237" name="PRIMARY">
+    <key id="285" parent="237" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>typeId</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="284" parent="238" name="userId">
+    <column id="286" parent="238" name="userId">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="285" parent="238" name="userName">
+    <column id="287" parent="238" name="userName">
       <Position>2</Position>
       <DataType>varchar(45)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="286" parent="238" name="userFirstName">
+    <column id="288" parent="238" name="userFirstName">
       <Position>3</Position>
       <DataType>varchar(45)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="287" parent="238" name="userLastName">
+    <column id="289" parent="238" name="userLastName">
       <Position>4</Position>
       <DataType>varchar(45)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="288" parent="238" name="userPassword">
+    <column id="290" parent="238" name="userPassword">
       <Position>5</Position>
       <DataType>varchar(45)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="289" parent="238" name="roleId">
+    <column id="291" parent="238" name="roleId">
       <Position>6</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="290" parent="238" name="fk_User_Role_idx">
+    <index id="292" parent="238" name="fk_User_Role_idx">
       <ColNames>roleId</ColNames>
     </index>
-    <key id="291" parent="238" name="PRIMARY">
+    <key id="293" parent="238" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>userId
 roleId</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="292" parent="238" name="fk_User_Role">
+    <foreign-key id="294" parent="238" name="fk_User_Role">
       <ColNames>roleId</ColNames>
       <RefSchemaName>h_transplant</RefSchemaName>
       <RefTableName>role</RefTableName>
       <RefColNames>roleId</RefColNames>
     </foreign-key>
-    <column id="293" parent="239" name="userBookingId">
+    <column id="295" parent="239" name="userBookingId">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="294" parent="239" name="userBookingStatus">
+    <column id="296" parent="239" name="userBookingStatus">
       <Position>2</Position>
       <DataType>tinyint(4)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="295" parent="239" name="userId">
+    <column id="297" parent="239" name="userId">
       <Position>3</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="296" parent="239" name="bookingDate">
+    <column id="298" parent="239" name="bookingDate">
       <Position>4</Position>
       <DataType>datetime|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="297" parent="239" name="packageId">
+    <column id="299" parent="239" name="packageId">
       <Position>5</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="298" parent="239" name="doctorId">
+    <column id="300" parent="239" name="doctorId">
       <Position>6</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="299" parent="239" name="fk_userBooking_User1_idx">
+    <index id="301" parent="239" name="fk_userBooking_User1_idx">
       <ColNames>userId</ColNames>
     </index>
-    <index id="300" parent="239" name="fk_userBooking_Package_has_Doctor1_idx">
+    <index id="302" parent="239" name="fk_userBooking_Package_has_Doctor1_idx">
       <ColNames>packageId
 doctorId</ColNames>
     </index>
-    <key id="301" parent="239" name="PRIMARY">
+    <key id="303" parent="239" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>userBookingId
 userId
@@ -1267,13 +1282,13 @@ packageId
 doctorId</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="302" parent="239" name="fk_userBooking_User1">
+    <foreign-key id="304" parent="239" name="fk_userBooking_User1">
       <ColNames>userId</ColNames>
       <RefSchemaName>h_transplant</RefSchemaName>
       <RefTableName>user</RefTableName>
       <RefColNames>userId</RefColNames>
     </foreign-key>
-    <foreign-key id="303" parent="239" name="fk_userBooking_Package_has_Doctor1">
+    <foreign-key id="305" parent="239" name="fk_userBooking_Package_has_Doctor1">
       <ColNames>packageId
 doctorId</ColNames>
       <RefSchemaName>h_transplant</RefSchemaName>

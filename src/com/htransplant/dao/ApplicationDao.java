@@ -8,6 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.htransplant.beans.HairPackage;
+import com.htransplant.beans.User;
 
 public class ApplicationDao {
 
@@ -38,6 +39,34 @@ public class ApplicationDao {
             exception.printStackTrace();
         }
         return hairpackages;
+    }
+
+    public int registerUser(User user){
+        int rowsAffected = 0;
+        try{
+            //get connection to the database
+            Connection connection = DBConnection.getConnectionToDatabase();
+
+            //write the insert query
+            String insertQuery = "INSERT INTO `h_transplant`.`user`(`userName`,`userFirstName`,`userLastName`,`userPassword`,`roleId`) VALUES\n" +
+                    "(?,?,?,?,?);";
+
+            //set parameters with prepare statement
+            java.sql.PreparedStatement statement = connection.prepareStatement(insertQuery);
+            statement.setString(1,user.getUserName());
+            statement.setString(2,user.getUserFirstName());
+            statement.setString(3,user.getUserLastName());
+            statement.setString(4,user.getUserPassword());
+            statement.setInt(1,2);
+
+            //execute statement
+
+            rowsAffected = statement.executeUpdate();
+
+        }catch (SQLException exception){
+            exception.printStackTrace();
+        }
+        return  rowsAffected;
     }
 
 }
