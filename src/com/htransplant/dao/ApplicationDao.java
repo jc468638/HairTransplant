@@ -48,8 +48,7 @@ public class ApplicationDao {
             Connection connection = DBConnection.getConnectionToDatabase();
 
             //write the insert query
-            String insertQuery = "INSERT INTO `h_transplant`.`user`(`userName`,`userFirstName`,`userLastName`,`userPassword`,`roleId`) VALUES\n" +
-                    "(?,?,?,?,?);";
+            String insertQuery = "INSERT INTO user(userName,userFirstName,userLastName,userPassword,roleId) VALUES(?,?,?,?,?);";
 
             //set parameters with prepare statement
             java.sql.PreparedStatement statement = connection.prepareStatement(insertQuery);
@@ -57,7 +56,7 @@ public class ApplicationDao {
             statement.setString(2,user.getUserFirstName());
             statement.setString(3,user.getUserLastName());
             statement.setString(4,user.getUserPassword());
-            statement.setInt(1,2);
+            statement.setInt(5,2);
 
             //execute statement
 

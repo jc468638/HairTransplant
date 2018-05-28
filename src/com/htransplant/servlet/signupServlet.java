@@ -13,18 +13,15 @@ import java.io.IOException;
 
 @WebServlet("/signup")
 public class signupServlet extends HttpServlet {
-    @Override
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        req.getRequestDispatcher("/html/signup.jsp").forward(req,resp);
-    }
+
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         //collecting info from form
         String username = req.getParameter("username");
         String password = req.getParameter("password");
-        String firstName = req.getParameter("fname");
-        String lastname = req.getParameter("lname");
+        String firstName = req.getParameter("firstName");
+        String lastname = req.getParameter("lastName");
 
         //fill the data in the user bean
         User user = new User(username,firstName,lastname,password);
@@ -40,5 +37,14 @@ public class signupServlet extends HttpServlet {
         }else{
             infoMessage = "User registered succesfully";
         }
+        req.setAttribute("infoMessage",infoMessage);
     }
+
+    @Override
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+
+        req.getRequestDispatcher("/html/signup.jsp").forward(req,resp);
+    }
+
+
 }

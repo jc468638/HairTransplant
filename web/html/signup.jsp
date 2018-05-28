@@ -50,19 +50,21 @@
       <div class="row">
 
         <div class="col-md-6 order-md-1">
+
           <h4 class="mb-3">Create my account</h4>
-          <form class="needs-validation" novalidate>
+          <form class="needs-validation" novalidate action="signup" method="post">
+              <%= request.getAttribute("infoMessage") %>
             <div class="row">
               <div class="col-md-6 mb-3">
                 <label for="firstName">First name</label>
-                <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                <input type="text" class="form-control" id="firstName" name="firstName" placeholder="" value="" required>
                 <div class="invalid-feedback">
                   Valid first name is required.
                 </div>
               </div>
               <div class="col-md-6 mb-3">
                 <label for="lastName">Last name</label>
-                <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                <input type="text" class="form-control" id="lastName" name="lastName" placeholder="" value="" required>
                 <div class="invalid-feedback">
                   Valid last name is required.
                 </div>
@@ -75,7 +77,7 @@
                 <div class="input-group-prepend">
                   <span class="input-group-text">@</span>
                 </div>
-                <input type="text" class="form-control" id="username" placeholder="Username" required>
+                <input type="text" class="form-control" id="username" name="username" placeholder="Username" required>
                 <div class="invalid-feedback" style="width: 100%;">
                   Your username is required.
                 </div>
@@ -89,6 +91,14 @@
                 Please enter a valid email address for shipping updates.
               </div>
             </div>
+
+              <div class="mb-3">
+                  <label for="address">Address</label>
+                  <input type="text" class="form-control" id="password" name="password" placeholder="Password" required>
+                  <div class="invalid-feedback">
+                      Please enter your password.
+                  </div>
+              </div>
 
             <div class="mb-3">
               <label for="address">Address</label>
@@ -132,6 +142,10 @@
                 </div>
               </div>
             </div>
+
+              <hr class="mb-4">
+              <button class="btn btn-primary btn-lg btn-block" type="submit" name="submit" id="submit">Create Account</button>
+
           </form>
         </div>
       </div>
