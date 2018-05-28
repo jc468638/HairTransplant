@@ -36,8 +36,11 @@ public class signupServlet extends HttpServlet {
             infoMessage = "Sorry, an error ocurred";
         }else{
             infoMessage = "User registered succesfully";
+            req.setAttribute("infoMessage",infoMessage);
+            resp.sendRedirect("/html/index.html");
         }
-        req.setAttribute("infoMessage",infoMessage);
+
+
     }
 
     @Override
