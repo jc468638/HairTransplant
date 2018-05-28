@@ -39,10 +39,10 @@
       </a>
       <div class="btn-toolbar" role="toolbar" id="btn-toolbar-login-signup">
         <div class="btn-group" role="group">
-          <a href="Login.html" type="button" class="btn btn-default">Login</a>
+          <a href="/login" type="button" class="btn btn-default">Login</a>
         </div>
         <div class="btn-group" role="group">
-          <a href="SignUp.html"  type="button" class="btn btn-primary">Sign Up</a>
+          <a href="/signup"  type="button" class="btn btn-primary">Sign Up</a>
         </div>
       </div>
     </div>
