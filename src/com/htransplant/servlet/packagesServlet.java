@@ -20,6 +20,6 @@ public class packagesServlet extends HttpServlet {
         List<HairPackage> packages = dao.ListHairPackages();
 
         req.setAttribute("packages",packages);
-        req.getRequestDispatcher("/html/packages.jsp").forward(req,;);
+        req.getRequestDispatcher("/html/packages.jsp").forward(req,resp);
     }
 }

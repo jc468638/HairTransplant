@@ -36,9 +36,9 @@ public class signupServlet extends HttpServlet {
         //prepare a message
         String infoMessage = null;
         if(rows==0){
-            infoMessage = "Sorry, an error ocurred"
+            infoMessage = "Sorry, an error ocurred";
         }else{
-            infoMessage = "User registered succesfully"
+            infoMessage = "User registered succesfully";
         }
     }
 }
