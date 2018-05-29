@@ -1,14 +1,19 @@
 package com.htransplant.dao;
 
 
+
+
+import javax.servlet.http.HttpServlet;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
-public class DBConnection {
+public class DBConnection extends HttpServlet{
 
     public static Connection getConnectionToDatabase() {
         Connection connection = null;
+
+
 
         try {
 

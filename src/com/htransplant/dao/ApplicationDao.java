@@ -1,9 +1,6 @@
 package com.htransplant.dao;
 
-import java.sql.Connection;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -68,4 +65,60 @@ public class ApplicationDao {
         return  rowsAffected;
     }
 
+    public boolean validateUser(String username, String password) {
+        boolean isValidUser=false;
+        try{
+            //get the connection to the database
+            Connection connection = DBConnection.getConnectionToDatabase();
+
+            //write the select query
+            String sql = "select * from user where userName=? and userPassword=?";
+
+            //prepare statement
+            PreparedStatement statement = connection.prepareStatement(sql);
+            statement.setString(1,username);
+            statement.setString(2,password);
+
+            //execute statement
+            ResultSet set = statement.executeQuery();
+
+            while (set.next()){
+                isValidUser = true;
+            }
+
+
+        }
+        catch (SQLException exception){
+            exception.printStackTrace();
+        }
+        return isValidUser;
+    }
+
+    public User getProfileDetails(String username){
+        User user = null;
+        try{
+            //get connection to the database
+            Connection connection = DBConnection.getConnectionToDatabase();
+
+            //write select query to get profile details
+            String sql = "SELECT userName,userFirstName,userLastName FROM h_transplant.user where userName=?;";
+            PreparedStatement statement = connection.prepareStatement(sql);
+            statement.setString(1,username);
+
+            //execute query, get resultset and return User info
+            ResultSet set = statement.executeQuery();
+            while (set.next()){
+                user = new User();
+                user.setUserName(set.getString("username"));
+                user.setUserFirstName(set.getString("userFirstName"));
+                user.setUserLastName(set.getString("userLastName"));
+
+            }
+
+
+        }catch (SQLException exception){
+            exception.printStackTrace();
+        }
+        return user;
+    }
 }
