@@ -1,4 +1,5 @@
-
+<%@ page import="com.htransplant.dao.ApplicationDao" %>
+<%@ page import="com.htransplant.beans.User" %>
 <nav class="site-header sticky-top py-1">
     <div class="container d-flex flex-column flex-md-row justify-content-between">
         <a class="py-2" href="#">
@@ -22,8 +23,13 @@
                 </div>
         <%
         } else {
+            ApplicationDao dao = new ApplicationDao();
+            User user = dao.getProfileDetails((String)session.getAttribute("username"));
         %>
                 <div class="btn-toolbar" role="toolbar" id="btn-toolbar-login-signup">
+                    <div class="btn-group" role="group">
+                        <a href="#" type="button" class="btn btn-default">Hi <%= user.getUserFirstName()%> </a>
+                    </div>
                     <div class="btn-group" role="group">
                         <a href="logout" type="button" class="btn btn-default">Logout</a>
                     </div>
@@ -33,4 +39,3 @@
         %>
     </div>
 </nav>
-
