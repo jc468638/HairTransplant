@@ -37,12 +37,24 @@
       </div>
     </nav>
 
-    <section class="jumbotron text-center">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="first-slide" src="../Resources/Back_clinic.jpg" alt="First slide" width="1400" height="350">
         <div class="container">
+          <div class="carousel-caption text-left">
+            <h1>Sign up</h1>
+            <p>Create your account with us, you will have benefits.</p>
+
+          </div>
+        </div>
+      </div>
+
+
+      <!--  <div class="container">
             <h1 class="jumbotron-heading">Sign up</h1>
             <p class="lead text-muted">Create your account with us, you will have benefits such as tracking ..... lorep</p>
-        </div>
-    </section>
+        </div> -->
+
 
     <div class="container">
 
