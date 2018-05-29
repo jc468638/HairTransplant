@@ -3,7 +3,6 @@ package com.htransplant.servlet;
 import com.htransplant.beans.User;
 import com.htransplant.dao.ApplicationDao;
 
-import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -37,7 +36,7 @@ public class signupServlet extends HttpServlet {
         }else{
             infoMessage = "User registered succesfully";
             req.setAttribute("infoMessage",infoMessage);
-            resp.sendRedirect("/html/index.html");
+            resp.sendRedirect("/html/index.jsp");
         }
 
 

@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 public class HomeServlet extends HttpServlet{
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		req.getRequestDispatcher("/html/index.html").forward(req, resp);
+		req.getRequestDispatcher("/html/index.jsp").forward(req, resp);
 	}
 
 }
