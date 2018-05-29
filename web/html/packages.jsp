@@ -56,6 +56,17 @@
         <div class="container">
           <h1 class="jumbotron-heading">Packages</h1>
           <p class="lead text-muted">You want  partial, complete, or even book an hotel in the beatiful Bangkov? Because we think in our customers, we offer amazing packages, select one of them and ask for a quotation.</p>
+            <% if(session.getAttribute("cart")!=null){%>
+            <p>
+                <span id ="size1" title="<%=((ArrayList)session.getAttribute("cart"))%>"> Items in cart: <%=((ArrayList)session.getAttribute("cart")).size()%></span>
+            </p>
+            <%} else {
+            %>
+            <span id ="size">Items in cart = 0</span>
+            <%
+                }
+            %>
+            }
         </div>
       </section>
 
@@ -66,50 +77,7 @@
         <div class="container">
 
           <div class="row">
-            <div class="col-md-4 ">
-              <div class="card mb-4 box-shadow">
-                <img class="card-img-top" src="../Resources/partial.jpg" alt="Card image cap">
-                <div class="card-body">
-                  <p class="card-text">Partial hair transplant are between 500 to 2000 hair transplant. Book it today!.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-primary">Book</button>
 
-                    </div>
-                    <small class="text-muted">From $1000</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card mb-4 box-shadow">
-                <img class="card-img-top" src="../Resources/complete.png" alt="Card image cap">
-                <div class="card-body">
-                  <p class="card-text">Complete hair transplant are between 5000 to 10000 hairs. Book it today!</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-primary">Book</button>
-
-                    </div>
-                    <small class="text-muted">From $4000</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card mb-4 box-shadow">
-                <img class="card-img-top" src="../Resources/full_package.png" alt="Card image cap">
-                <div class="card-body">
-                  <p class="card-text">This is a full package. Including hair transplant + Hotel + Flight. We help you to have a pleasant experience and save money.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                        <button type="button" class="btn btn-sm btn-primary">Book</button>
-                    </div>
-                    <small class="text-muted">9 mins</small>
-                  </div>
-                </div>
-              </div>
-            </div>
             <!-- Display packages using scriplets and expressions
              ================================================== -->
             <%
@@ -119,9 +87,10 @@
               while(iterator.hasNext()){
                   HairPackage hairPackage = iterator.next();
                   %>
+
               <!-- Code for get========= -->
               <div class="col-md-4">
-                <form>
+                <form action= "addPackage" method = "get">
                   <div class="card mb-4 box-shadow">
                     <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Card image cap">
                     <div class="card-body">
