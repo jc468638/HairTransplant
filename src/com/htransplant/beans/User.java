@@ -6,11 +6,17 @@ public class User {
     private String userLastName;
     private String userPassword;
 
+
     public User(String userName, String userFirstName, String userLastName, String userPassword) {
         this.userName = userName;
         this.userFirstName = userFirstName;
         this.userLastName = userLastName;
         this.userPassword = userPassword;
+
+    }
+
+    public User() {
+        // TODO Auto-generated constructor stub
     }
 
     public String getUserFirstName() {
