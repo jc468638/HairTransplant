@@ -9,7 +9,7 @@
             <param-value>jdbc:mysql://localhost:3306/h_transplant</param-value>
         </context-param>
     <session-config>
-        <session-timeout>40</session-timeout>
+        <session-timeout>60</session-timeout>
     </session-config>
 </web-app>
 
