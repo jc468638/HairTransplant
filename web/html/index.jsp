@@ -12,13 +12,13 @@
     <title>HF</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for carousel -->
-    <link href="../css/carousel.css" rel="stylesheet">
+    <link href="css/carousel.css" rel="stylesheet">
 
     <!-- Custom styles for menu products -->
-    <link href="../css/product.css" rel="stylesheet">
+    <link href="css/product.css" rel="stylesheet">
   </head>
   <body>
 
