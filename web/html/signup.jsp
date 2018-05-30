@@ -39,8 +39,19 @@
 
     <section class="jumbotron text-center">
         <div class="container">
+
+
+          <div class="carousel-inner">
+            <img class="first-slide" src="../Resources/Blurred_Clinic.png" alt="First slide">
+            <div class="carousel-item active">
+              <div class="container">
+                <div class="carousel-caption text-left">
             <h1 class="jumbotron-heading">Sign up</h1>
             <p class="lead text-muted">Create your account with us, you will have benefits such as tracking ..... lorep</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
     </section>
 
