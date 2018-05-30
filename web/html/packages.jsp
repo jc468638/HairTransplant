@@ -39,7 +39,7 @@
                 if (session.getAttribute("cart") != null) {
             %>
             <p>
-				<span id="size1"
+				<span id="size"
                       title="<%=((ArrayList) session.getAttribute("cart"))%>">Items
 					in Cart: <%=((ArrayList) session.getAttribute("cart")).size()%></span>
             </p>
@@ -78,9 +78,10 @@
                     <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Card image cap">
                     <div class="card-body">
                       <p class="card-text"><%=hairPackage.getPackageDescription()%></p>
+                        <input type="text" name="hairPackagesString" value="<%=hairPackage.getPackageName()%>">
                       <div class="d-flex justify-content-between align-items-center">
                         <div class="btn-group">
-                          <button type="button" class="btn btn-sm btn-primary">Add</button>
+                          <button type="submit" class="btn btn-sm btn-primary">Add</button>
                         </div>
                         <small class="text-muted">From $<%=hairPackage.getPackagePrice()%></small>
                       </div>

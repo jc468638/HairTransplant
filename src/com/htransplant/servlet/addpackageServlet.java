@@ -24,8 +24,8 @@ public class addpackageServlet extends HttpServlet {
         if (cart==null){
             cart = new ArrayList<>();
         }
-        if(request.getParameter("hairPackages")!= null){
-            cart.add(request.getParameter("hairPackages"));
+        if(request.getParameter("hairPackagesString")!= null){
+            cart.add(request.getParameter("hairPackagesString"));
         }
         session.setAttribute("cart",cart);
 
