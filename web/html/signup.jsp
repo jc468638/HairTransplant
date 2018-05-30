@@ -37,6 +37,19 @@
       </div>
     </nav>
 
+
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="first-slide" src="../Resources/Back_clinic.jpg" alt="First slide">
+        <div class="container">
+          <div class="carousel-caption text-left">
+            <h1 class="jumbotron-heading">Sign up</h1>
+            <p class="lead text-muted">Create your account with us, you will have benefits such as tracking ..... lorep</p>
+            <p><a class="btn btn-lg btn-primary" href="#" role="button">Book today!</a></p>
+          </div>
+        </div>
+      </div>
+
     <section class="jumbotron text-center">
         <div class="container">
             <h1 class="jumbotron-heading">Sign up</h1>
