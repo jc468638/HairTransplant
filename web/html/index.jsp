@@ -128,7 +128,7 @@
         <!-- Three columns of text below the carousel -->
         <div class="row">
           <div class="col-lg-4">
-            <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+            <img class="rounded-circle" src="../Resources/h1.jpg" alt="Generic placeholder image" width="140" height="140">
             <h2>Mr Gery Vetters</h2>
             <p>Extremely satisfied with the treatment provided.I’m still very happy that I did it and that it was successful. Even my eyebrows have already started to look good, and they will still improve. I give the treatment a 9 on a scale of 1 – 10.</p>
             <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
