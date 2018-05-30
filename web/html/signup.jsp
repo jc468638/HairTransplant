@@ -40,12 +40,12 @@
 
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img class="first-slide" src="../Resources/Back_clinic.jpg" alt="First slide">
+        <img class="first-slide" src="../Resources/sign.jpg" alt="First slide" width="1000" height="300">
         <div class="container">
           <div class="carousel-caption text-left">
             <h1 class="jumbotron-heading">Sign up</h1>
-            <p class="lead text-muted">Create your account with us, you will have benefits such as tracking ..... lorep</p>
-            <p><a class="btn btn-lg btn-primary" href="#" role="button">Book today!</a></p>
+            <p class="lead text-muted">Create your account with us, you will get more benifits.</p>
+
           </div>
         </div>
       </div>
