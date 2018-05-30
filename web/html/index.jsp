@@ -51,7 +51,7 @@
             <div class="container">
               <div class="carousel-caption text-left">
                 <h1>Our Clinic!</h1>
-                <p>Main clinic located at Bangkok, with the latest technological equipment and best professionals team around the world. </p>
+                <p>Main clinic located at Bangkok, with the latest technological equipment and best professionals team  </p>
                 <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
               </div>
             </div>
@@ -128,21 +128,21 @@
         <!-- Three columns of text below the carousel -->
         <div class="row">
           <div class="col-lg-4">
-            <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-            <h2>Heading</h2>
-            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+            <img class="rounded-circle" src="../Resources/h1.jpg" alt="Generic placeholder image" width="140" height="140">
+            <h2>Mr Gery Vetters</h2>
+            <p>Extremely satisfied with the treatment provided.I’m still very happy that I did it and that it was successful. Even my eyebrows have already started to look good, and they will still improve. I give the treatment a 9 on a scale of 1 – 10.</p>
             <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
           </div><!-- /.col-lg-4 -->
           <div class="col-lg-4">
             <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-            <h2>Heading</h2>
-            <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+            <h2>Mr Kurt Ebnoether</h2>
+            <p>I chose to undergo a hair transplant because my hair had been getting thinner for a while. I had the thinning somewhat under control with Minoxidil, but I wanted it thicker in the front. I underwent the treatment on April 17, 2012 and it went fine. There was a good atmosphere and Dr. Vong and his staff are very knowledgeable.I definitely recommend that people undergo a hair transplant at HHH Natural Hair Transplant Center, partly because the end result is still improving all the time. I would rate it an 8.5 on a scale of 1 to 10.</p>
             <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
           </div><!-- /.col-lg-4 -->
           <div class="col-lg-4">
             <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-            <h2>Heading</h2>
-            <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+            <h2>Mrs Linda V</h2>
+            <p>You transplanted my hair and I am still very happy with the result. My hair started to grow soon after the surgery and I wear it a little longer nowadays, which gives a stylish and fresh look. Various hairdressers have told me that they have rarely seen such a good hair transplant result.</p>
             <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
           </div><!-- /.col-lg-4 -->
         </div><!-- /.row -->

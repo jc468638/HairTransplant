@@ -10,9 +10,9 @@
     <title>Checkout example for Bootstrap</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom styles -->
-    <link href="css/product.css" rel="stylesheet">
+    <link href="../css/product.css" rel="stylesheet">
   </head>
 
   <body class="bg-light">
@@ -37,24 +37,25 @@
       </div>
     </nav>
 
+
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img class="first-slide" src="../Resources/Back_clinic.jpg" alt="First slide" width="1400" height="350">
+        <img class="first-slide" src="../Resources/Back_clinic.jpg" alt="First slide">
         <div class="container">
           <div class="carousel-caption text-left">
-            <h1>Sign up</h1>
-            <p>Create your account with us, you will have benefits.</p>
-
+            <h1 class="jumbotron-heading">Sign up</h1>
+            <p class="lead text-muted">Create your account with us, you will have benefits such as tracking ..... lorep</p>
+            <p><a class="btn btn-lg btn-primary" href="#" role="button">Book today!</a></p>
           </div>
         </div>
       </div>
 
-
-      <!--  <div class="container">
+    <section class="jumbotron text-center">
+        <div class="container">
             <h1 class="jumbotron-heading">Sign up</h1>
             <p class="lead text-muted">Create your account with us, you will have benefits such as tracking ..... lorep</p>
-        </div> -->
-
+        </div>
+    </section>
 
     <div class="container">
 
@@ -163,20 +164,15 @@
                         </div>
 
 
-    </div>
-    <!-- /.container -->
-    <!-- FOOTER -->
-    <footer class="container">
-      <p class="float-right"><a href="#">Back to top</a></p>
-      <p>&copy; 2017-2018 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-    </footer>
+                      </div>
+
                       <!-- Bootstrap core JavaScript
                       ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="js/jquery-slim.min.js"><\/script>')</script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../js/jquery-slim.min.js"><\/script>')</script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
     <script src="../../../../assets/js/vendor/holder.min.js"></script>
     <script>
       // Example starter JavaScript for disabling form submissions if there are invalid fields

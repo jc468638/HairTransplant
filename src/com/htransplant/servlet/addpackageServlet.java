@@ -19,8 +19,7 @@ public class addpackageServlet extends HttpServlet {
 
         HttpSession session = request.getSession();
 
-        List<String> cart = (
-                ArrayList<String>)session.getAttribute("cart");
+        List<String> cart = (ArrayList<String>)session.getAttribute("cart");
 
         if (cart==null){
             cart = new ArrayList<>();
