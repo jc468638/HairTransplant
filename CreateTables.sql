@@ -4,9 +4,10 @@ DROP TABLE `h_transplant`.`userBooking`;
 DROP TABLE `h_transplant`.`DoctorTimetable`;
 DROP TABLE `h_transplant`.`user`;
 DROP TABLE `h_transplant`.`Role`;
-DROP TABLE `h_transplant`.`SurgeryType`;
 DROP TABLE `h_transplant`.`Package_has_Doctor`;
 DROP TABLE `h_transplant`.`Package`;
+DROP TABLE `h_transplant`.`SurgeryType`;
+DROP TABLE `h_transplant`.`DoctorDaysAvailability`;
 DROP TABLE `h_transplant`.`Doctor`;
 
 
