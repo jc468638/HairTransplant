@@ -22,7 +22,7 @@ public class DBConnection extends HttpServlet{
             System.out.println("MySQL JDBC Driver Registered!");
 
             // get hold of the DriverManager
-            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/h_transplant", "root", "Cookie95");
+            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/h_transplant", "userAdmin", "admin");
         } catch (ClassNotFoundException e) {
             System.out.println("Where is your MySQL JDBC Driver?");
             e.printStackTrace();
