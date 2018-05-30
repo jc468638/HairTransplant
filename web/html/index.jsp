@@ -128,22 +128,22 @@
         <!-- Three columns of text below the carousel -->
         <div class="row">
           <div class="col-lg-4">
-            <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+            <img class="rounded-circle" src="../Resources/h1.jpg" alt="Generic placeholder image" width="140" height="140">
             <h2>Mr Gery Vetters</h2>
-            <p>Extremely satisfied with the treatment provided.I’m still very happy that I did it and that it was successful. Even my eyebrows have already started to look good, and they will still improve. I give the treatment a 9 on a scale of 1 – 10.</p>
-            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+            <p>Extremely satisfied with the treatment provided.I am very happy that I did it and that it was successful. I was experiencing hair thinning for a while, but the treatment solved my problem. It is still improving. I give the treatment a 9 on a scale of 1 to 10.</p>
+
           </div><!-- /.col-lg-4 -->
           <div class="col-lg-4">
-            <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+            <img class="rounded-circle" src="../Resources/h2.jpg" alt="Generic placeholder image" width="140" height="140">
             <h2>Mr Kurt Ebnoether</h2>
-            <p>I chose to undergo a hair transplant because my hair had been getting thinner for a while. I had the thinning somewhat under control with Minoxidil, but I wanted it thicker in the front. I underwent the treatment on April 17, 2012 and it went fine. There was a good atmosphere and Dr. Vong and his staff are very knowledgeable.I definitely recommend that people undergo a hair transplant at HHH Natural Hair Transplant Center, partly because the end result is still improving all the time. I would rate it an 8.5 on a scale of 1 to 10.</p>
-            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+            <p>I underwent the treatment on April 17, 2012 and it went fine. There was a good atmosphere and Dr. Vong and his staff are very knowledgeable.I definitely recommend that people undergo a hair transplant at HHH Natural Hair Transplant Center, because the end result is still improving all the time.</p>
+
           </div><!-- /.col-lg-4 -->
           <div class="col-lg-4">
-            <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+            <img class="rounded-circle" src="../Resources/h3.jpg" alt="Generic placeholder image" width="140" height="140">
             <h2>Mrs Linda V</h2>
             <p>You transplanted my hair and I am still very happy with the result. My hair started to grow soon after the surgery and I wear it a little longer nowadays, which gives a stylish and fresh look. Various hairdressers have told me that they have rarely seen such a good hair transplant result.</p>
-            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+
           </div><!-- /.col-lg-4 -->
         </div><!-- /.row -->
 
