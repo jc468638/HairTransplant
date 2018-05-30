@@ -23,7 +23,7 @@ public class packagesServlet extends HttpServlet {
         ApplicationDao dao = new ApplicationDao();
         List<HairPackage> packages = dao.ListHairPackages();
 
-        req.setAttribute("packages",packages);
+        req.setAttribute("hairPackages",packages);
         req.getRequestDispatcher("/html/packages.jsp").forward(req,resp);
     }
 }

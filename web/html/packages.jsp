@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="../../../../favicon.ico">
+    <link rel="icon" href="../Resources/icon.ico">
 
 
 
@@ -27,9 +27,6 @@
   <body>
 
     <%@include file="menu.jsp" %>
-
-    <%@include file="menu.jsp" %>
-
 
 
     <main role="main">
@@ -67,7 +64,7 @@
             <!-- Display packages using scriplets and expressions
              ================================================== -->
             <%
-              List<HairPackage> hairPackages = (ArrayList)request.getAttribute("packages");
+              List<HairPackage> hairPackages = (ArrayList)request.getAttribute("hairPackages");
               Iterator<HairPackage> iterator = hairPackages.iterator();
 
               while(iterator.hasNext()){
@@ -84,7 +81,7 @@
                         <input type="text" name="hairPackagesString" value="<%=hairPackage.getPackageName()%>">
                       <div class="d-flex justify-content-between align-items-center">
                         <div class="btn-group">
-                          <button type="submit" class="btn btn-sm btn-primary">Add</button>
+                          <button class="btn btn-sm btn-primary">Add</button>
                         </div>
                         <small class="text-muted">From $<%=hairPackage.getPackagePrice()%></small>
                       </div>
