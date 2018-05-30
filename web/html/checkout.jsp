@@ -10,10 +10,10 @@
     <title>Checkout</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="../css/product.css" rel="stylesheet">
+    <link href="css/product.css" rel="stylesheet">
 </head>
 
 <body class="bg-light">
