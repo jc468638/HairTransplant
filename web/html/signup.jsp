@@ -13,12 +13,14 @@
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom styles -->
     <link href="../css/product.css" rel="stylesheet">
+    <link href="css/carousel.css" rel="stylesheet">
+
   </head>
 
   <body class="bg-light">
     <nav class="site-header sticky-top py-1">
       <div class="container d-flex flex-column flex-md-row justify-content-between">
-          <a class="py-2" href="#home"><img src="../Resources/symbol.png">
+          <a class="py-2" href="#home"><img src="../Resources/symbol.png" >
           </a>
         <a class="py-2" href="#">
 
@@ -40,23 +42,19 @@
       </div>
     </nav>
 
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-    </ol>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img class="first-slide" src="../Resources/Banner.jpg" alt="First slide" width=100% height="300">
+        <img class="first-slide" src="../Resources/Banner.jpg" alt="First slide">
         <div class="container">
           <div class="carousel-caption text-left">
-            <p style="font-weight: bold; color:Black; font-size: 35px;">For More Details...</p>
-
-          </div>
+            <h1>Join Us!</h1>
+            <p>Start an amazing journey towards a confident lifestyle with us.</p>
           </div>
         </div>
-    </div>
       </div>
     </div>
+  </div>
+  </div>
 
 
 
@@ -69,7 +67,7 @@
         <div class="col-md-6 order-md-1">
 
           <form class="needs-validation" novalidate action="signup" method="post">
-              <%= request.getAttribute("infoMessage") %>
+              
             <div class="row">
               <div class="col-md-6 mb-3">
                 <label for="firstName">First name</label>
