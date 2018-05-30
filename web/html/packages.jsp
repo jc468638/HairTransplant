@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="../Resources/icon.ico">
+    <link rel="icon" href="Resources/icon.ico">
 
 
 
@@ -31,10 +31,11 @@
 
     <main role="main">
 
-      <section class="jumbotron text-center">
-        <div class="container">
-          <h1 class="jumbotron-heading">Packages</h1>
-          <p class="lead text-muted">You want  partial, complete, or even book an hotel in the beatiful Bangkov? Because we think in our customers, we offer amazing packages, select one of them and ask for a quotation.</p>
+
+        <div  id="principalImage" >
+          <div class="carousel-caption text-left">
+          <h1>Packages</h1>
+          <p>You want  partial, complete, or even book an hotel in the beatiful Bangkov? Because we think in our customers, we offer amazing packages, select one of them and ask for a quotation.</p>
             <%
                 if (session.getAttribute("cart") != null) {
             %>
@@ -50,10 +51,10 @@
             <%
                 }
             %>
-
-
+          </div>
+           <img class="img-responsive blurImage" src="Resources/blurClinic.png" alt="Generic placeholder image">
         </div>
-      </section>
+
 
       <!-- Packages code
       ================================================== -->
@@ -75,10 +76,10 @@
                 <form action="addPackage" method="get">
 
                   <div class="card mb-4 box-shadow">
-                    <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Card image cap">
+                    <img class="card-img-top" src="<%=hairPackage.getPackageImgPath()%>" alt="<%=hairPackage.getPackageName()%>">
                     <div class="card-body">
                       <p class="card-text"><%=hairPackage.getPackageDescription()%></p>
-                        <input type="text" name="hairPackagesString" value="<%=hairPackage.getPackageName()%>">
+                        <input type="hidden" name="hairPackagesString" value="<%=hairPackage.getPackageName()%>">
                       <div class="d-flex justify-content-between align-items-center">
                         <div class="btn-group">
                           <button class="btn btn-sm btn-primary">Add</button>
@@ -101,11 +102,7 @@
       <!-- /.container -->
 
 
-      <!-- FOOTER -->
-      <footer class="container">
-        <p class="float-right"><a href="#">Back to top</a></p>
-        <p>&copy; 2017-2018 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-      </footer>
+      <%@include file="footer.jsp" %>
     </main>
 
     <!-- Bootstrap core JavaScript
