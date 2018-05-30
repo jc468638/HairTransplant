@@ -64,7 +64,7 @@
             <!-- Display packages using scriplets and expressions
              ================================================== -->
             <%
-              List<HairPackage> hairPackages = (ArrayList)request.getAttribute("packages");
+              List<HairPackage> hairPackages = (ArrayList)request.getAttribute("hairPackages");
               Iterator<HairPackage> iterator = hairPackages.iterator();
 
               while(iterator.hasNext()){
@@ -81,7 +81,7 @@
                         <input type="text" name="hairPackagesString" value="<%=hairPackage.getPackageName()%>">
                       <div class="d-flex justify-content-between align-items-center">
                         <div class="btn-group">
-                          <button type="submit" class="btn btn-sm btn-primary">Add</button>
+                          <button class="btn btn-sm btn-primary">Add</button>
                         </div>
                         <small class="text-muted">From $<%=hairPackage.getPackagePrice()%></small>
                       </div>
