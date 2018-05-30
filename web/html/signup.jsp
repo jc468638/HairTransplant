@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="../../../../favicon.ico">
+    <link rel="icon" href="../Resources/icon.ico">
 
     <title>Checkout example for Bootstrap</title>
 
@@ -40,22 +40,17 @@
 
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img class="first-slide" src="../Resources/sign.jpg" alt="First slide" width="1000" height="300">
+        <img class="first-slide" src="../Resources/Banner.jpg" alt="First slide" width="1400" height="300">
         <div class="container">
           <div class="carousel-caption text-left">
-            <h1 class="jumbotron-heading">Sign up</h1>
-            <p class="lead text-muted">Create your account with us, you will get more benifits.</p>
-
+            <h1>Sign Up</h1>
+            <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign Up</a></p>
           </div>
         </div>
       </div>
 
-    <section class="jumbotron text-center">
-        <div class="container">
-            <h1 class="jumbotron-heading">Sign up</h1>
-            <p class="lead text-muted">Create your account with us, you will have benefits such as tracking ..... lorep</p>
-        </div>
-    </section>
+
+
 
     <div class="container">
 
