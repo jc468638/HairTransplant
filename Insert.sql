@@ -44,13 +44,15 @@ INSERT INTO `h_transplant`.`package`
 `packageDescription`,
 `packagePrice`,
 `packageStatus`,
-`typeId`)
+`typeId`,
+`packageImgPath`)
 VALUES
 ('Partial',
 'Partial hair transplant are between 500 to 2000 hair transplant. Book it today!.',
 1000,
 'AC',
-1);
+1,
+'https://drive.google.com/open?id=15_ysI4D5eYt-QClU1Fmzj_SVOkkA-AVf');
 
 INSERT INTO `h_transplant`.`package`
 (
@@ -58,10 +60,29 @@ INSERT INTO `h_transplant`.`package`
 `packageDescription`,
 `packagePrice`,
 `packageStatus`,
-`typeId`)
+`typeId`,
+`packageImgPath`)
 VALUES
 ('Complete Hair transplant',
 'Complete hair transplant are between 5000 to 10000 hairs. Book it today!',
 4000,
 'AC',
-2);
+2,
+'https://drive.google.com/open?id=1iHaWKm5TPLAi4I0OwfDidjFxpZQKcIQW');
+
+INSERT INTO `h_transplant`.`package`
+(
+`packageName`,
+`packageDescription`,
+`packagePrice`,
+`packageStatus`,
+`typeId`,
+`packageImgPath`)
+VALUES
+('Full Package',
+'Complete hair transplant + flight + hotel. Book it today!',
+6000,
+'AC',
+2,
+'https://drive.google.com/open?id=1n5aba-YuzPx8PG_Lc_rvAwOJnpXUBVoK');
+
