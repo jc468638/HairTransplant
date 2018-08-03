@@ -21,7 +21,9 @@
 
   <body class="text-center">
     <form class="form-signin" action="login" method="post">
-      <img class="circle" src="Resources/symbol.png" alt="" width="72" height="72">
+        <a href="home">
+        <img class="circle" src="Resources/symbol.png" alt="" width="72" height="72">
+        </a>
       <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
       <% if(request.getAttribute("error")!=null){%>
       <%= request.getAttribute("error") %></br>

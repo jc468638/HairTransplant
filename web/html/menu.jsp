@@ -1,16 +1,7 @@
 <%@ page import="com.htransplant.dao.ApplicationDao" %>
 <%@ page import="com.htransplant.beans.User" %>
 <%@ page import="java.util.ArrayList" %>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="Resources/icon.ico">
 
-
-
-</head>
 <nav class="site-header sticky-top py-1">
     <div class="container d-flex flex-column flex-md-row justify-content-between">
         <a  href="home"><img class="circleMenu" src="Resources/symbol.png">
