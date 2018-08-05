@@ -28,8 +28,9 @@ public class ApplicationDao {
                 hairPackage.setPackageName(set.getString("packageName"));
                 hairPackage.setPackageDescription(set.getString("packageDescription"));
                 hairPackage.setPackagePrice(set.getInt("packagePrice"));
-               // hairPackage.setPackageImgPath(set.getString("packageI"));
+                hairPackage.setPackageImgPath(set.getString("packageImgPath"));
                 hairpackages.add(hairPackage);
+
             }
         }
         catch(SQLException exception){

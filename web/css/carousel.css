@@ -25,6 +25,13 @@ body {
   padding: 10px 10px 10px 30px;
 }
 
+.carousel-caption-right {
+  bottom: 3rem;
+  background: rgba(1, 1, 1, 0.49);
+  padding: 100px 40px 10px 40px;
+  color:#fff;
+}
+
 /* Declare heights because of positioning of img element */
 .carousel-item {
   height: 32rem;
@@ -37,6 +44,18 @@ body {
   min-width: 100%;
   height: 32rem;
 }
+
+#principalImage {
+  position: relative;
+}
+
+
+.blurImage {
+  position: relative;
+
+  z-index: -3;
+}
+
 
 
 /* MARKETING CONTENT
