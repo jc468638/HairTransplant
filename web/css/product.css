@@ -27,6 +27,19 @@
 
 
 }
+
+.circleMenu {
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 50%;
+  font-size: 1.5em;
+  color: #fff;
+  line-height: 3.5em;
+  margin: auto;
+  text-align: center;
+  background: #193441
+}
+
 .site-header a:hover {
   color: #f8f9fa;
   background-color: #2e4d83;

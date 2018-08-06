@@ -75,6 +75,7 @@ CREATE TABLE IF NOT EXISTS `h_transplant`.`Package` (
   `packageDescription` varchar(500) DEFAULT NULL,
   `packagePrice` int(11) DEFAULT NULL,
   `packageStatus` varchar(2) DEFAULT NULL,
+  `packageImgPath` VARCHAR(100) NULL,
   `typeId` int(11) NOT NULL,
   PRIMARY KEY (`packageId`),
   KEY `fk_Package_SurgeryType1_idx` (`typeId`),

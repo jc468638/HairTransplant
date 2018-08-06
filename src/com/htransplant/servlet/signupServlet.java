@@ -36,10 +36,8 @@ public class signupServlet extends HttpServlet {
         }else{
             infoMessage = "User registered succesfully";
             req.setAttribute("infoMessage",infoMessage);
-            resp.sendRedirect("/html/index.jsp");
+            req.getRequestDispatcher("/html/login.jsp").forward(req,resp);
         }
-
-
     }
 
     @Override

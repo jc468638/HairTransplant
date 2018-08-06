@@ -36,7 +36,7 @@ public class loginServlet extends HttpServlet {
             session.setAttribute("username",username);
 
             //forward to home jsp
-            req.getRequestDispatcher("/html/index.jsp").forward(req,resp); //TODO check this, home.jsp is on lynda
+            req.getRequestDispatcher("/html/index.jsp").forward(req,resp);
         }else{
             String errorMessage="Invalid credentials, please login again";
             req.setAttribute("error",errorMessage);
