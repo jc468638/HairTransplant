@@ -160,3 +160,18 @@ ENGINE = InnoDB;
 SET SQL_MODE=@OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
+
+
+CREATE TABLE `h_transplant`.`enquiry` (
+  `enquiry_id` INT NOT NULL,
+  `enquiry_ref` INT NULL,
+  `user_email` VARCHAR(45) NULL,
+  `user_name` VARCHAR(45) NULL,
+  `user_last_name` VARCHAR(45) NULL,
+  `user_phone` VARCHAR(45) NULL,
+  `user_sex` INT NULL,
+  `user_weight` INT NULL,
+  `enquiry_title` VARCHAR(45) NULL,
+  `enquiry_message` VARCHAR(45) NULL,
+  PRIMARY KEY (`enquiry_id`),
+  UNIQUE INDEX `user_email_UNIQUE` (`user_email` ASC));
