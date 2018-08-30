@@ -175,3 +175,7 @@ CREATE TABLE `h_transplant`.`enquiry` (
   `enquiry_message` VARCHAR(45) NULL,
   PRIMARY KEY (`enquiry_id`),
   UNIQUE INDEX `user_email_UNIQUE` (`user_email` ASC));
+                                    
+ALTER TABLE `h_transplant`.`enquiry` 
+CHANGE COLUMN `enquiry_id` `enquiry_id` INT(11) NOT NULL AUTO_INCREMENT ;
+
