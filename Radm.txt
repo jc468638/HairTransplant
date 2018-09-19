@@ -1,5 +1,5 @@
 tst sampl
-This is a dummy fie.
+This is a dummy file
 Plz refer this file
-Sample code.
+Sample code
 
