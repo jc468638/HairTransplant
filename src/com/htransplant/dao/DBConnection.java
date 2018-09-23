@@ -3,6 +3,7 @@ package com.htransplant.dao;
 
 
 
+
 import javax.servlet.http.HttpServlet;
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -13,8 +14,6 @@ public class DBConnection extends HttpServlet{
     public static Connection getConnectionToDatabase() {
         Connection connection = null;
 
-
-
         try {
 
             // load the driver class
@@ -22,7 +21,9 @@ public class DBConnection extends HttpServlet{
             System.out.println("MySQL JDBC Driver Registered!");
 
             // get hold of the DriverManager
-            connection = DriverManager.getConnection("jdbc:mysql://18.222.45.148:3306/h_transplant", "userAdmin", "AJuensu!@123");
+
+            //connection = DriverManager.getConnection("jdbc:mysql://18.222.45.148:3306/h_transplant", "userAdmin", "AJuensu!@123");
+            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/h_transplant", "userAdmin", "admin");
         } catch (ClassNotFoundException e) {
             System.out.println("Where is your MySQL JDBC Driver?");
             e.printStackTrace();
