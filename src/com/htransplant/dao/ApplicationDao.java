@@ -4,8 +4,13 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.htransplant.beans.Attachment;
+import com.htransplant.beans.Enquiry;
 import com.htransplant.beans.HairPackage;
 import com.htransplant.beans.User;
+
+
+
 
 public class ApplicationDao {
 
@@ -122,4 +127,63 @@ public class ApplicationDao {
         }
         return user;
     }
+
+    public int addEnquiry(Enquiry enquiry){
+        int rowsAffected = 0;
+        try{
+            //get connection to the database
+            Connection connection = DBConnection.getConnectionToDatabase();
+
+            //write the insert query
+            String insertQuery = "INSERT INTO enquiry(enquiry_ref,user_email,user_name,user_last_name,user_phone, user_sex, user_weight,enquiry_title, enquiry_message  ) VALUES(?,?,?,?,?,?,?,?,?);";
+
+            //set parameters with prepare statement
+            java.sql.PreparedStatement statement = connection.prepareStatement(insertQuery);
+            statement.setInt(1, enquiry.getEnquiryRef());
+            statement.setString(2,enquiry.getUserEmail());
+            statement.setString(3,enquiry.getUserName());
+            statement.setString(4,enquiry.getUserLastName());
+            statement.setString(5,enquiry.getUserPhone());
+            statement.setInt(6,enquiry.getUserSex());
+            statement.setInt(7,enquiry.getUserWeight());
+            statement.setString(8,enquiry.getEnquiryTitle());
+            statement.setString(9,enquiry.getEnquiryMessage());
+
+            //execute statement
+
+            rowsAffected = statement.executeUpdate();
+
+        }catch (SQLException exception){
+            exception.printStackTrace();
+        }
+        return  rowsAffected;
+    }
+
+    public int addAttachment(Attachment attachment){
+        int rowsAffected = 0;
+        try{
+            //get connection to the database
+            Connection connection = DBConnection.getConnectionToDatabase();
+
+            //write the insert query
+            String insertQuery = "INSERT INTO attachment(attch_type,attch_type_id,attch_file,attach_name) VALUES(?,?,?,?);";
+
+            //set parameters with prepare statement
+            java.sql.PreparedStatement statement = connection.prepareStatement(insertQuery);
+            statement.setInt(1, attachment.getAttch_type());
+            statement.setInt(2, attachment.getAttch_type_id());
+            statement.setBlob(3,attachment.getAttch_file());
+            statement.setString(4,attachment.getAttach_name());
+
+
+            //execute statement
+
+            rowsAffected = statement.executeUpdate();
+
+        }catch (SQLException exception){
+            exception.printStackTrace();
+        }
+        return  rowsAffected;
+    }
+
 }
