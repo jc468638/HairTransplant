@@ -4,7 +4,7 @@ body{
 }
 .showcase::after {
     content: '';
-    height: 80vh;
+    height: 70vh;
     width: 100%;
     background-image: url("../img/icons/showcase.jpg");
     background-size: cover ;
