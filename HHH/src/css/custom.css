@@ -49,3 +49,6 @@
     margin: 1rem auto;
     padding: 1rem;
 }
+.col-md-4 :hover{ -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);}
