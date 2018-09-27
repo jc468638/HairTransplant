@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="apple-touch-icon" sizes="76x76" href="img/apple-icon.png">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>
+        HF transplant
+    </title>
+    <meta name="description" content="">
+
+
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+
+    <!-- Place favicon.ico in the root directory -->
+    <!--     Fonts and icons     -->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+
+    <!-- CSS Files -->
+    <link href="css/material-kit.css?v=2.0.4" rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/custom.css">
+    <script src="js/google-apps-script.js"></script>
+    <script src="js/form-submission-handler.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="landing-page sidebar-collapse">
+
+<div class="menu"></div>
+
+
+<div class="page-header-secondary header-filter" data-parallax="true" style="background-image: url('img/clinic.jpg')">
+
+</div>
+
+<div class="main main-raised">
+
+    <div class="container">
+
+        <!-- showing multiple forms working -->
+        <hr style="margin: 50px">
+
+        <form class="gform pure-form pure-form-stacked" method="POST" data-email="landemayuresh7@gmail.com"
+              action="https://script.google.com/macros/s/AKfycbwVkHsLzSJFJ0G5ZzuTRc53PIM3NlpdXdVhx85oN77f4dvDP1A/exec">
+            <!-- change the form action to your script url -->
+
+            <div class="form-elements">
+                <fieldset class="pure-group">
+                    <label for="name">Name: </label>
+                    <input id="name" name="name" required placeholder= "Your name " />
+                </fieldset>
+
+                <fieldset class="pure-group">
+                    <label for="message">Message: </label>
+                    <textarea id="message" name="message" rows="10"
+                              required placeholder="Tell us what's on your mind..."></textarea>
+                </fieldset>
+
+                <fieldset class="pure-group">
+                    <label for="email"><em>Your</em> Email Address:</label>
+                    <input id="email" name="email" type="email" value=""
+                           required placeholder="your.name@email.com"/>
+                    <span class="email-invalid" style="display:none">
+          Must be a valid email address</span>
+                </fieldset>
+
+
+                <button class="button-success pure-button button-xlarge">
+                    <i class="fa fa-paper-plane"></i>&nbsp;Send</button>
+            </div>
+<br><br>
+            <!-- Customise the Thankyou Message People See when they submit the form: -->
+                <div class="thankyou_message" style="display:none;">
+                    <h2><em>Thanks</em> for contacting us again!
+                        We will get back to you soon!</h2>
+                </div>
+        </form>
+        <div><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.5552208971553!2d100.56009771483042!3d13.7453569903516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29ee524ae4a81%3A0x9cd1679f30f13f53!2sH.H.H.+NATURAL+HAIR+TRANSPLANT+CENTER!5e0!3m2!1sen!2sau!4v1537969524997" width="1350" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+        <script data-cfasync="false" type="text/javascript" src="form-submission-handler.js"></script>
+
+        <footer class="footer footer-default">
+</footer>
+
+<!--   Core JS Files   -->
+<script src="js/core/jquery.min.js" type="text/javascript">
+</script>
+<script src="js/core/popper.min.js" type="text/javascript">
+</script>
+<script src="js/core/bootstrap-material-design.min.js" type="text/javascript">
+</script>
+<script src="js/plugins/moment.min.js">
+</script>
+<!--	Plugin for the Datepicker, full documentation here: https://github.com/Eonasdan/bootstrap-datetimepicker -->
+<script src="js/plugins/bootstrap-datetimepicker.js" type="text/javascript">
+</script>
+<!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+<script src="js/plugins/nouislider.min.js" type="text/javascript">
+</script>
+<!--	Plugin for Sharrre btn -->
+<script src="js/plugins/jquery.sharrre.js" type="text/javascript">
+</script>
+<!-- Control Center for Material Kit: parallax effects, scripts for the example pages etc -->
+<script src="js/material-kit.js?v=2.0.4" type="text/javascript">
+</script>
+<script src="js/utils.js">
+</script>
+</body>
+
+</html>
